@@ -33,12 +33,17 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-06-16T11:57:15-05:00</lastmod>
+    <loc>/post/</loc>
+    <lastmod>2020-10-29T22:25:41-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>/post/vsp-on-microbiome/</loc>
+    <lastmod>2020-10-29T22:25:41-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
     <lastmod>2020-06-16T11:57:15-05:00</lastmod>
   </url>
   
@@ -120,16 +125,6 @@
   <url>
     <loc>/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/privacy/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/terms/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
   
   <url>
