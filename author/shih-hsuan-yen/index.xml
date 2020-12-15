@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shih-Hsuan Yen | Hannah&#39;s Blog</title>
+    <link>/author/shih-hsuan-yen/</link>
+      <atom:link href="/author/shih-hsuan-yen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Shih-Hsuan Yen</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Shih-Hsuan Yen</title>
+      <link>/author/shih-hsuan-yen/</link>
+    </image>
+    
+    <item>
+      <title>Developing Lignosulfonate-Based Activated Carbon Fibers</title>
+      <link>/publication/journal-article/lignofiber/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/journal-article/lignofiber/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

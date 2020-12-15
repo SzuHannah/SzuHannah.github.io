@@ -5,12 +5,20 @@
     <link>/author/feng-cheng-chang/</link>
       <atom:link href="/author/feng-cheng-chang/index.xml" rel="self" type="application/rss+xml" />
     <description>Feng-Cheng Chang</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 05 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 02 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Feng-Cheng Chang</title>
       <link>/author/feng-cheng-chang/</link>
     </image>
+    
+    <item>
+      <title>Developing self-activated lignosulfonate-based porous carbon material for ethylene adsorption,</title>
+      <link>/publication/journal-article/lignoethylene/</link>
+      <pubDate>Mon, 02 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/journal-article/lignoethylene/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Crosslinking and carbonization of electrospun lignosulfonate fiber</title>
@@ -25,6 +33,14 @@
       <link>/publication/conference-paper/nanohannah/</link>
       <pubDate>Wed, 05 Jun 2019 00:00:00 +0000</pubDate>
       <guid>/publication/conference-paper/nanohannah/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Developing Lignosulfonate-Based Activated Carbon Fibers</title>
+      <link>/publication/journal-article/lignofiber/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/journal-article/lignofiber/</guid>
       <description></description>
     </item>
     
