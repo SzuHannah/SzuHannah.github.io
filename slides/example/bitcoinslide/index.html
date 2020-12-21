@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/slides/example/bitcoinslide/">
+
+  <title>Bitcoin and Neo4j | Hannah&#39;s Blog</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/white.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous">
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/reveal_custom.min.css">
+
+  
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/css/print/pdf.css' : 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+
+</head>
+<body>
+
+  
+<div class="reveal">
+  <div class="slides">
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+    <section>
+    
+      <h1 id="bitcoin--neo4j">Bitcoin &amp; Neo4j</h1>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="bitcoin-introduction">Bitcoin introduction</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-bitcoin-distributed-network">
+
+
+  <a data-fancybox="" href="/img/bitcoin1.jpg" data-caption="Bitcoin distributed network">
+
+
+  <img src="/img/bitcoin1.jpg" alt="" width="90%" >
+</a>
+
+
+  
+  
+  <figcaption>
+    Bitcoin distributed network
+  </figcaption>
+
+
+</figure>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="bitcoin-introduction-1">Bitcoin introduction</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-bitcoin-distributed-network">
+
+
+  <a data-fancybox="" href="/img/bitcoin2.jpg" data-caption="Bitcoin distributed network">
+
+
+  <img src="/img/bitcoin2.jpg" alt="" width="70%" >
+</a>
+
+
+  
+  
+  <figcaption>
+    Bitcoin distributed network
+  </figcaption>
+
+
+</figure>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="bitcoin-introduction-2">Bitcoin introduction</h2>
+<ul>
+<li>Files: blkxxx.dat</li>
+<li>Serialized data of blocks and transactions</li>
+<li>Block: version, previous block, time&hellip;</li>
+<li>Transaction: input/output addrs, value&hellip;</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure id="figure-blockchain">
+
+
+  <a data-fancybox="" href="/img/blockchain.jpeg" data-caption="Blockchain">
+
+
+  <img src="/img/blockchain.jpeg" alt="" width="35%" >
+</a>
+
+
+  
+  
+  <figcaption>
+    Blockchain
+  </figcaption>
+
+
+</figure>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="blockchain-graph">Blockchain graph</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/blockchaingraph.png" >
+
+
+  <img src="/img/blockchaingraph.png" alt="" width="65%" >
+</a>
+
+
+
+</figure>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="blockchain-graph-nodes">Blockchain graph (Nodes)</h2>
+<ul>
+<li>Block: BlockID (height), timeStamp</li>
+<li>Transaction: TxID (height-txPosition, e.g. 10001-1), timeStamp, inputTotal, outputTotal</li>
+<li>Wallet (addrs aggregation): WalletID</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/unionFind.jpeg" >
+
+
+  <img src="/img/unionFind.jpeg" alt="" width="75%" >
+</a>
+
+
+
+</figure>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="blockchain-graph-relationships">Blockchain graph (Relationships)</h2>
+<ul>
+<li>Contains (Block-Transaction)</li>
+<li>Input/Output (Wallet-Transaction): value<br>
+<img src="/img/contains_rel.png" width="300" alt="Contains"/>
+<img src="/img/input_output_rel.png" alt="InOut"/></li>
+</ul>
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="induced-transaction-graph">Induced Transaction graph</h2>
+<ul>
+<li>Node: Wallet</li>
+<li>Relationship: Sent_to {timeStamp, value}</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/inoutSent.jpeg" >
+
+
+  <img src="/img/inoutSent.jpeg" alt=""  >
+</a>
+
+
+
+</figure>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h2 id="induced-transaction-graph-1">Induced Transaction graph</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/img/txgraph.png" >
+
+
+  <img src="/img/txgraph.png" alt="" width="55%" >
+</a>
+
+
+
+</figure>
+
+
+    </section>
+    
+
+    
+    
+    
+    <section>
+    
+      
+<h1 id="thank-you">Thank you</h1>
+
+    </section>
+    
+
+    
+    
+  </div>
+</div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.min.js"></script>
+
+  <script>
+    window.revealPlugins = { dependencies: [
+      
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/zoom-js/zoom.js', async: true },
+      
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/math/math.js', async: true },
+      
+      { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.8.0/plugin/print-pdf/print-pdf.js', async: true },
+      
+      { src: '\/js\/vendor\/reveal.js\/plugin\/notes\/notes.js', async: true }
+    ]};
+
+    let revealDefaults = { center: true, controls: true, history: true, progress: true, transition: 'slide', mouseWheel: true };
+    let revealOptions = Object.assign({}, revealDefaults, revealPlugins);
+    Reveal.initialize(revealOptions);
+  </script>
+
+</body>
+</html>

@@ -18,6 +18,21 @@
   </url>
   
   <url>
+    <loc>/slides/example/bitcoinslide/</loc>
+    <lastmod>2020-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/slides/</loc>
+    <lastmod>2020-12-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication-type/2/</loc>
     <lastmod>2020-11-02T00:00:00+00:00</lastmod>
   </url>
@@ -34,11 +49,6 @@
   
   <url>
     <loc>/author/feng-cheng-chang/</loc>
-    <lastmod>2020-11-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2020-11-02T00:00:00+00:00</lastmod>
   </url>
   
