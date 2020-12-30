@@ -5,7 +5,7 @@
     <link>/project/</link>
       <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 21 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Projects</title>
@@ -13,23 +13,90 @@
     </image>
     
     <item>
-      <title>External Project</title>
-      <link>/project/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/external-project/</guid>
+      <title>Bitcoin Transaction</title>
+      <link>/project/internal-project/bitcoin/</link>
+      <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/project/internal-project/bitcoin/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This project is ongoing. Bitcoin transactions can reveal some behaviors relative to black market activities, currency crisis in certain countries, and etc. We aim to detect patterns in the transaction graph and understand user behaviors.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Environment, soil pH, and Microbiome</title>
+      <link>/project/internal-project/microbiome/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/project/internal-project/microbiome/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Bacteria are critical for the functioning of the ecosystem at different scales. Important nutrient cycles such as nitrogen, phosphorus, and carbon depend on bacteria in soils. In addition, bacteria can have symbiotic and pathogenic associations with plants that can influence plant productivity and vegetation composition. Studying soil bacteria under different environmental factors and soil conditions is important to understand ecosystem dynamics.
+Moreover, Bateria can be affected by climate, vegetation, soil resources, and soil conditions. Subsequently, we can find different patterns of bacteria diversity and abundance globally.  As an important factor of soil condition, soil pH has been significantly important in explaining bacteria diversity, abundance, and functions. Motivated by Bacteria’s critical role in the ecosystem, here we analyzed data from the Earth Microbiome Project and observed that soil bacteria diversity and function are influenced by different environments and soil pH.&lt;/p&gt;
+&lt;p&gt;Authors: Emily Diaz Vallejo &amp;amp; Hannah Wang&lt;/p&gt;
+&lt;h2 id=&#34;method&#34;&gt;Method&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2004.05387&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vintage Sparse PCA (VSP)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Disucssions/Visualizations/Data analysis details were documented in the PDF and Github repo provided above&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Murmuration</title>
+      <link>/project/external-project/murmuration/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/project/external-project/murmuration/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Internal Project</title>
-      <link>/project/internal-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/internal-project/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+      <title>Coronavirus Tweet</title>
+      <link>/project/internal-project/covidtweet/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/project/internal-project/covidtweet/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This is a R shiny app project&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Coronavirus disease (COVID-19) is an infectious disease with unprecedentedly extreme contagiousness, which is far beyond SARS or MERS. Its first outbreak was observed at Wuhan, the capital of Hubei province in China, and it is a catastrophe on a global scale. While it is spreading all over the world, the speed or the pattern of how it is transmitted varies by country. There could be factors such as the governments’ reactions that interfere with the spreading speed, but we want to delve into the social media perspective to investigate if it can predict the spread of COVID-19.&lt;/p&gt;
+&lt;p&gt;The initial thought is that social media is a platform where people discuss things they care about. Regarding COVID-19, there are so many online discussions every day. Thus, we are curious to examine if these discussions have anything to do with the spread of disease. In this application, tweets under the #coronavirus hashtag are used as the proxy for COVID-19 related social media discussions. As for indices of the disease spread, total confirm cases, total test cases, confirm cases per 100 tests, new cases, new deaths, and total deaths are included to let users explore. With the tweets data collected from Twitter API, and coronavirus data from Our World in Data website, we found two ways to account for the variance in the COVID-19 case numbers: one is the topic clusters of the tweets which is shown in the &amp;ldquo;Tweet Wall&amp;rdquo; tab, and the other is the frequent words within tweets, which is shown in the &amp;ldquo;Spread of Covid-19 versus Frequent words in tweets&amp;rdquo; tab.&lt;/p&gt;
+&lt;p&gt;Authors: Sukyoung Cho &amp;amp; Hannah Wang&lt;/p&gt;
+&lt;h2 id=&#34;methods&#34;&gt;Methods&lt;/h2&gt;
+&lt;p&gt;Methods and code are documented in the 
+&lt;a href=&#34;https://github.com/SzuHannah/CoronavirusTweet.git&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github Repository&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;usage-of-the-app&#34;&gt;Usage of the App&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Tweet Explore&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Please choose the date input first, and then choose a flock that you are intered in. Then you&amp;rsquo;ll see the visualizations dynamically change. In the &amp;ldquo;Word Frequency (Summary by flock)&amp;rdquo; session, it displays the top 15 tweet words that exist within the specified date-flock. In the &amp;ldquo;Word Frequencey (Summary of the date)&amp;rdquo; session, it displays the top 15 tweet words on that date (regardless of flocks). The &amp;ldquo;sentiment distribution&amp;rdquo; displays with boxplots. The box contains first, second, and third quantiles, and the dots are outliers.&lt;br&gt;
+(If nothing displays, please click on any date and flock of interest to trigger the plot to re-render)&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Tweet Wall&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Please select a topic and a flock to see the tweet posts that were clustered into the topic. Then the user will see the correspondent glm summary table for that flock. Each as.matrix(z)1, 2, 3&amp;hellip; represents a topic, i.e. as.matrix(z)1 is topic 1, as.matrix(z)2 is topic 2. The y in the model represents the log transformation of the total confirm case. The tweets and summary table are constructed with the data across 60 days, i.e., the unit of analysis is a day. There may be some duplicate tweets with different time stamp, or because the tweets&#39; status ids are different, they are still all included.  Or if the tweet posts are missing, it may mean that they were deleted, so the html widget could not obtain the post.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Spread of Covid-19 v.s. frequent words&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Under this tab, users are able to see plenty of graphics. On the top-left side, the graph displays the cumulative number of confirmed cases and the cumulative number of tests performed along the timeline, which serves to represent the trend of the pandemic. The graph next to it shows the change of confirmed case per 100 tests with time, which can be a good indicator for the spread of Covid-19. On the bottom-right and bottom-center, users are able to explore the graphs with variables that they might be interested in. Facet plot is for users who are interested in all attributes and want to see everything at a glance. The user can choose the word to see its relationship with each type of case numbers. Each dot represents a day, and all case numbers are log transformed. Next to it is the &amp;ldquo;Single plot&amp;rdquo;, it allows users to zoom in a single word(predictor) and a single case type(dependent variable), and the case numbers in the zoomed-in single plot does not take log transformation. On the bottom-right, users are able to explore the statistical model to estimate the predictions based on the linear model. Using a check box, readers can choose predictors and the dependent variable they want to predict. The words used as predictors are the most frequent words that appeared in more than 40 days. We took a log for Total_confirm and Total_test variables to make them less leveraging, as they are increasing exponentially.&lt;/p&gt;
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+&lt;p&gt;Here, we will present an example result for each tab.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Tweet Explore&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here is an example that we choose February 1st as date, and flocks of interests are &amp;ldquo;liberals&amp;rdquo;, &amp;ldquo;media&amp;rdquo;, and &amp;ldquo;academia&amp;rdquo;. The top row shows the top 15 words for each flock on that date, and the bottom left shows the summary of top words&#39; frequencies for all 6 flocks on that date. As is shown in the plots, there are several words that make the list for all flocks, such as &amp;ldquo;outbreak&amp;rdquo; and &amp;ldquo;wuhan&amp;rdquo;. However, there are also flock-specific words, for example, &amp;ldquo;sars&amp;rdquo; and &amp;ldquo;misinformation&amp;rdquo; only occurs in media flock. The reason may be that they are in charge of delivering information, and compare covid-19 with sars to let the audience be more aware of the disease. The bottom right is the sentiment distribution for the flocks we chose. For the three flocks we chose, 75% of the tweets&#39; sentiments are below 0, and tweets from academia seemed to have a rather centralized sentimental distirubtion.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/SzuHannah/CoronavirusTweet/master/image/tweetexplore.png&#34; alt=&#34;tweetexplore&#34;&gt;
+&lt;em&gt;Fig. 1: Tweet explore example&lt;/em&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Tweet Wall&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here is an example that we choose topic 4 of liberals. If you scroll through, it&amp;rsquo;s mainly talking about how Trump deals with Covid-19. In the summary table, it is shown that, for tweets within liberals flock, topic 1-5, topic 7-18, topic 20-27 and topic 30 are all siginificant for explaining the variance in log(total confirm case numbers). Looking through some of the significant topics, for example, topic 10 seems to be talking about the spread of Covid-19 within U.S. Topic 11 seems to be talking about WHO.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/SzuHannah/CoronavirusTweet/master/image/tweetwall.png&#34; alt=&#34;tweetwall&#34;&gt;
+&lt;em&gt;Fig. 2: Tweet wall example&lt;/em&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Spread of Covid-19 v.s. frequent words&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For &amp;ldquo;facet plot&amp;rdquo;, we choose &amp;ldquo;epidemic&amp;rdquo; as the x. The x axis represents the count of the word&amp;rsquo;s occurence, y represents log transformation of the case numbers, and each dot is a date. Overall, while the frequency of &amp;ldquo;epidemic&amp;rdquo; increases, the log(total_confirm), log(new_cases), and log(total_deaths) increases as well. For the &amp;ldquo;single plot&amp;rdquo;, we choose infected as the predictor, and total_confirm as response. However, because in the end of March, the case numbers started to increase exponeentially, which makes other points look close to zero, resulting in the no-trend plot. This verify the fact that for total confirm case numbers, we may need to take a log transformation if we want to construct a linear model. For the &amp;ldquo;Linear model&amp;rdquo; session, we choose epidemic, realdonaldtrump, and wuhan as predictors, and log(total_confirm) as response. According to the summary table, epidemic and realdonaldtrump are significant-positvie correlated with log(total_confirm), and according to the adjusted R-squared, the predictors altogether account for around 85% of the variance in log(total_confirm).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/SzuHannah/CoronavirusTweet/master/image/spread.png&#34; alt=&#34;spread&#34;&gt;
+&lt;em&gt;Fig. 3: Spread of Covid-19 v.s. Frequent words in tweets example&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h2&gt;
+&lt;p&gt;The main goal of the app was showing users how tweet words and posts are related with the trend of Covid-19&amp;rsquo;s spread. From our test examples, it is shown that the tweets, both in word token level and in topic level can significantly explain the variance in covid-19 case numbers, and the most obvious trend exists when the dependent variable is log transformation of total confirmed cases. The limitation of the app is that, so far we only included data until March 31st, but there are many more cases after April, which can be interesting to explore as well. Moreover, regarding the tweet posts, there are some tweets that contain duplicate contents but different status ids, and we did not exclude these duplicates. For future work, it may be more interesting to analyze only on the unique posts.&lt;/p&gt;
 </description>
     </item>
     

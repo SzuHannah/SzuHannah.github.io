@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microbiome | Hannah&#39;s Blog</title>
+    <link>/tag/microbiome/</link>
+      <atom:link href="/tag/microbiome/index.xml" rel="self" type="application/rss+xml" />
+    <description>Microbiome</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Microbiome</title>
+      <link>/tag/microbiome/</link>
+    </image>
+    
+    <item>
+      <title>Environment, soil pH, and Microbiome</title>
+      <link>/project/internal-project/microbiome/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/project/internal-project/microbiome/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Bacteria are critical for the functioning of the ecosystem at different scales. Important nutrient cycles such as nitrogen, phosphorus, and carbon depend on bacteria in soils. In addition, bacteria can have symbiotic and pathogenic associations with plants that can influence plant productivity and vegetation composition. Studying soil bacteria under different environmental factors and soil conditions is important to understand ecosystem dynamics.
+Moreover, Bateria can be affected by climate, vegetation, soil resources, and soil conditions. Subsequently, we can find different patterns of bacteria diversity and abundance globally.  As an important factor of soil condition, soil pH has been significantly important in explaining bacteria diversity, abundance, and functions. Motivated by Bacteria’s critical role in the ecosystem, here we analyzed data from the Earth Microbiome Project and observed that soil bacteria diversity and function are influenced by different environments and soil pH.&lt;/p&gt;
+&lt;p&gt;Authors: Emily Diaz Vallejo &amp;amp; Hannah Wang&lt;/p&gt;
+&lt;h2 id=&#34;method&#34;&gt;Method&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://arxiv.org/abs/2004.05387&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vintage Sparse PCA (VSP)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Disucssions/Visualizations/Data analysis details were documented in the PDF and Github repo provided above&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
