@@ -18,7 +18,7 @@
       <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
       <guid>/project/internal-project/bitcoin/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;This project is ongoing. Bitcoin transactions can reveal some behaviors relative to black market activities, currency crisis in certain countries, and etc. We aim to detect patterns in the transaction graph and understand user behaviors.&lt;/p&gt;
+&lt;p&gt;Bitcoin transactions can reveal some behaviors relative to black market activities, currency crisis in certain countries, and etc. We aim to detect patterns in the transaction graph and understand user behaviors.&lt;/p&gt;
 &lt;h2 id=&#34;languagedatabase&#34;&gt;Language/Database&lt;/h2&gt;
 &lt;p&gt;Python, R, SQLite, Neo4j&lt;/p&gt;
 </description>
