@@ -1,0 +1,10 @@
+/.quarto/
+/_site/
+*.Rproj.user
+.Rhistory
+.RData
+.Renviron
+.DS_Store
+Thumbs.db
+
+**/*.quarto_ipynb

@@ -1,0 +1,121 @@
+[
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Bitcoin\n\nBitcoin Transaction\nBitcoin transactions can reveal behaviors relative to black market activities, currency crisis in certain countries, and more. We aim to detect patterns in the transaction graph and understand user behaviors.\n\nPython, R, SQLite, Neo4j · Dec 2020\n\nSlides Draft Report Gitbook Code\n\n\n\nMicrobiome\n\nEnvironment, Soil pH, and Microbiome\nAnalyzed data from the Earth Microbiome Project, observing that soil bacteria diversity and function are influenced by different environments and soil pH. Used Vintage Sparse PCA (VSP).\n\nAuthors: Emily Diaz Vallejo & Hannah Wang\n\nReport Code\n\n\n\nTwitter\n\nMurmuration\nThis project was condusted when I was a data analyst at Dr. Karl Rohe’s Lab. The web application aims to visualize public attention across political and cultural flocks on Twitter.\nWebsite\n\n\n\nTwitter\n\nCoronavirus Tweet\nAn R Shiny app that allows users to explore tweets under #coronavirus, leveraging VSP to cluster tweets by topic and flock.\n\nR shiny app Code"
+  },
+  {
+    "objectID": "files/slides/bitcoinslide/index.html#bitcoin-introduction",
+    "href": "files/slides/bitcoinslide/index.html#bitcoin-introduction",
+    "title": "Bitcoin & Neo4j",
+    "section": "Bitcoin introduction",
+    "text": "Bitcoin introduction\n\nBitcoin distributed network"
+  },
+  {
+    "objectID": "files/slides/bitcoinslide/index.html#bitcoin-introduction-1",
+    "href": "files/slides/bitcoinslide/index.html#bitcoin-introduction-1",
+    "title": "Bitcoin & Neo4j",
+    "section": "Bitcoin introduction",
+    "text": "Bitcoin introduction\n\nBitcoin distributed network"
+  },
+  {
+    "objectID": "files/slides/bitcoinslide/index.html#bitcoin-introduction-2",
+    "href": "files/slides/bitcoinslide/index.html#bitcoin-introduction-2",
+    "title": "Bitcoin & Neo4j",
+    "section": "Bitcoin introduction",
+    "text": "Bitcoin introduction\n\nFiles: blkxxx.dat\nSerialized data of blocks and transactions\nBlock: version, previous block, time…\nTransaction: input/output addrs, value…\n\n\nBlockchain"
+  },
+  {
+    "objectID": "files/slides/bitcoinslide/index.html#blockchain-graph",
+    "href": "files/slides/bitcoinslide/index.html#blockchain-graph",
+    "title": "Bitcoin & Neo4j",
+    "section": "Blockchain graph",
+    "text": "Blockchain graph"
+  },
+  {
+    "objectID": "files/slides/bitcoinslide/index.html#blockchain-graph-nodes",
+    "href": "files/slides/bitcoinslide/index.html#blockchain-graph-nodes",
+    "title": "Bitcoin & Neo4j",
+    "section": "Blockchain graph (Nodes)",
+    "text": "Blockchain graph (Nodes)\n\nBlock: BlockID (height), timeStamp\nTransaction: TxID (height-txPosition, e.g. 10001-1), timeStamp, inputTotal, outputTotal\nWallet (addrs aggregation): WalletID"
+  },
+  {
+    "objectID": "files/slides/bitcoinslide/index.html#blockchain-graph-relationships",
+    "href": "files/slides/bitcoinslide/index.html#blockchain-graph-relationships",
+    "title": "Bitcoin & Neo4j",
+    "section": "Blockchain graph (Relationships)",
+    "text": "Blockchain graph (Relationships)\n\nContains (Block-Transaction)\nInput/Output (Wallet-Transaction): value"
+  },
+  {
+    "objectID": "files/slides/bitcoinslide/index.html#induced-transaction-graph",
+    "href": "files/slides/bitcoinslide/index.html#induced-transaction-graph",
+    "title": "Bitcoin & Neo4j",
+    "section": "Induced Transaction graph",
+    "text": "Induced Transaction graph\n\nNode: Wallet\nRelationship: Sent_to {timeStamp, value}"
+  },
+  {
+    "objectID": "files/slides/bitcoinslide/index.html#induced-transaction-graph-1",
+    "href": "files/slides/bitcoinslide/index.html#induced-transaction-graph-1",
+    "title": "Bitcoin & Neo4j",
+    "section": "Induced Transaction graph",
+    "text": "Induced Transaction graph"
+  },
+  {
+    "objectID": "blog/posts/2020-06-16-vsp-on-tweet/index.html",
+    "href": "blog/posts/2020-06-16-vsp-on-tweet/index.html",
+    "title": "VSP on Tweet",
+    "section": "",
+    "text": "This is a hands-on example of the vsp library. A sampled Twitter data-set of tweets under #coronavirus was used for demonstration."
+  },
+  {
+    "objectID": "blog/posts/2020-06-16-vsp-on-tweet/index.html#introduction",
+    "href": "blog/posts/2020-06-16-vsp-on-tweet/index.html#introduction",
+    "title": "VSP on Tweet",
+    "section": "",
+    "text": "This is a hands-on example of the vsp library. A sampled Twitter data-set of tweets under #coronavirus was used for demonstration."
+  },
+  {
+    "objectID": "blog/posts/2020-06-16-vsp-on-tweet/index.html#methods",
+    "href": "blog/posts/2020-06-16-vsp-on-tweet/index.html#methods",
+    "title": "VSP on Tweet",
+    "section": "Methods",
+    "text": "Methods\n\nLibraries\nRequired libraries are dplyr, vsp, tidytext, purrr, and blogdown. The latter can be installed through devtools.\n#load libraries\nlibrary(dplyr)\n#devtools::install_github(\"RoheLab/vsp\")\nlibrary(vsp)\nlibrary(tidytext)\nlibrary(purrr) #for map function\nlibrary(blogdown) #for shortcodes in rmarkdown\n\n\nData Source & Data Description\nTweets were collected from Twitter API, and the twitter accounts were further divided into flocks, which is the same as the murmuration website. The data-set can be downloaded from here. Here we name the data-set “covid”.\nData description:\n\nDate: YYYY/MM/DD. Collected from Feb 1st to March 31st.\nuser_id: the id of the user that tweeted\nstatus_id: the id of the tweet post\nscreen_name: the @name shown to the public (e.g. @realdonaldtrump’s screen name is realdonaldtrump)\nflock_category: indicates the category of account clusters. There are 6 categories: liberals, conservatives, media, issue-centric, pop culture, academia\n\n#top several lines of the data-set\nhead(covid)\n\n\nData Cleaning\n1. For convenience, split the data by flock, and store it as a list:\ncovid_flockls &lt;- split(covid, f = covid$flock_category)[1:6]\n2. Extract the tweet text for each flock from the list generated by step 1:\ncovid_textls &lt;- lapply(covid_flockls, function(x) {\n    tibble(tweet = 1:nrow(x), text = x$text)\n})\n3. Further, for each flock, unnest the tweet text into tokens:\ncovid_ttls &lt;- lapply(covid_textls, function(x) {\n    x %&gt;% unnest_tokens(word, text)\n})\n\n#first several lines of the liberal flock\nhead(covid_ttls[['liberals']])\n\n\nRun VSP\n1. Make sparse matrix for each flock:\ncovid_matrix &lt;- lapply(covid_ttls, function(x) {\n    dt &lt;- cast_sparse(x, tweet, word)\n})\n\n#first 20 rows and columns of the liberal sparse matrix\ncovid_matrix[['liberals']][1:20, 1:20]\n2. Run VSP on each flock (categorize tweets into 15 topics, k=15). We can use screeplot to visualize the singular values:\ncovid_fa &lt;- lapply(covid_matrix, function(x) {\n    fa &lt;- vsp(x, k = 15)\n})\n\n#screeplot for the liberals flock\nscreeplot(covid_fa[['liberals']])\n\n#use pair plot to plot the factors (diagnostic measure)\nplot_varimax_z_pairs(covid_fa[['liberals']], 1:5)\n3. For each flock, according to the VSP result, for each topic (i.e. column in the matrix), find the top 10 rows that have the highest score. The matrix Z shows how much tweet i belongs to topic j:\ntopTweets &lt;- 10\ntopid_ls &lt;- lapply(covid_fa, function(x) {\n    topid &lt;- x$Z %&gt;% apply(2, function(t)\n        which(rank(-t, ties.method = \"random\") &lt;= topTweets))\n})\n\n#get the correspondent tweets\ntoptweet_ls &lt;- lapply(seq_along(topid_ls), function(i) {\n    df &lt;- topid_ls[[i]]\n    txtdf &lt;- covid_flockls[[i]]\n    ls &lt;- list()\n    for (j in 1:ncol(df)) {\n        name &lt;- paste(\"topic\", j)\n        ls[[j]] &lt;- tibble(\n            tweet = txtdf$text[df[, j]],\n            status_id = txtdf$status_id[df[, j]],\n            screen_name = txtdf$screen_name[df[, j]]\n        )\n        names(ls)[j] &lt;- name\n    }\n    return(ls)\n})\nnames(toptweet_ls) &lt;- names(topid_ls)\n4. If you want to embed the tweets into websites, you can mutate a column for tweet-post-urls:\nget_embed &lt;- function(status_id) {\n    api_result &lt;- httr::GET(paste0(\n        \"https://publish.twitter.com/oembed?url=https%3A%2F%2Ftwitter.com%2FInterior%2Fstatus%2F\",\n        status_id\n    ))\n    api_content &lt;- httr::content(api_result)\n    html_content &lt;- api_content[[\"html\"]]\n    return(html_content)\n}\n\ntoptweet_ls_withlink &lt;- lapply(toptweet_ls, function(ls) {\n    lapply(ls, function(topic) {\n        topic %&gt;%\n            mutate(status_url = paste0(\n                \"https://twitter.com/\", screen_name, \"/status/\", status_id\n            )) %&gt;%\n            mutate(embed_url = map(status_id, get_embed))\n    })\n})\n\n#example of top tweets for topic 10 in flock liberals\ntoptweet_ls_withlink[['liberals']][['topic 10']]\n5. Finally, use short codes to display the twitter-post HTML widgets:\nshortcodes(\"tweet\",\n    toptweet_ls_withlink[['liberals']][['topic 10']]$status_id)"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "A Spatially Explicit Societal Life Cycle Cost Framework for Sustainable Biographite Production in the United States\n\nHannah Szu-Han Wang, Jose A. Gonzalez-Aguirre, Sunkyu Park, Yuan Yao\n\n\nJoule (under review)\n\n\n\nMachine learning-assisted global life cycle assessment for sustainable biochar design\n\nHannah Szu-Han Wang, Wei Ren, Yuan Yao\n\n\nNature Chemical Engineering (under revision)\n\nPreprint\n\n\nGlobal Land and Carbon Consequences of Mass Timber Products\n\nKai Lan, Alice Favero, Yuan Yao, Robert O. Mendelsohn, Hannah Szu-Han Wang\n\n\nNature Communications, 16, pp. 4864, May 2025\n\nPDF DOI\n\n\nA modeling framework to identify environmentally greener and lower-cost pathways of nanomaterials\n\nKai Lan, Hannah Szu-Han Wang, Tessa Lee, Camilla Abbati de Assis, Richard Venditti, Yuan Yao\n\n\nGreen Chemistry, 26, pp. 3466-3478, Feb 2024\n\nPDF DOI\n\n\nMachine learning for sustainable development and applications of biomass and biomass-derived carbonaceous materials in water and agricultural systems: A review\n\nHannah Szu-Han Wang, Yuan Yao\n\n\nResources, Conservation & Recycling, 290, pp. 106847, March 2023\n\nPDF DOI\n\n\nCu(II) and Au(III) recovery with Electrospun Lignosulfonate CO2-Activated Carbon Fiber\n\nSzu-Han Wang, Feng-Cheng Chang\n\n\nInternational Journal of Biological Macromolecules, 203, pp. 505-514, April 2022\n\nPDF DOI\n\n\nDeveloping self-activated lignosulfonate-based porous carbon material for ethylene adsorption\n\nHannah Szu-Han Wang, Yuh-Kai Hwang, Seung Wan Choi, Xiangzhou Yuan, Ki Bong Lee, Feng-Cheng Chang\n\n\nJournal of the Taiwan Institute of Chemical Engineers, 2020\n\nPDF DOI\n\n\nDeveloping Lignosulfonate-Based Activated Carbon Fibers\n\nFeng-Cheng Chang, Shih-Hsuan Yen, Hannah Szu-Han Wang\n\n\nMaterials, 11(10), 1877, 2018\n\nPDF DOI\n\n\nCrosslinking and carbonization of electrospun lignosulfonate fiber\n\nWilliam Tai Yin Tze, Hannah Szu-Han Wang, Hsin-Chen Chen, Feng-Cheng Chang\n\n\nSubmicron-sized fiber of lignosulfonate can be electrospun from aqueous solution, signifying the possibility of green processing for carbon-based materials.\n\nPoster\n\n\nStudy on Cu(II) and Au(III) metal ion adsorption performance of the lignosulfonate activated carbon fiber\n\nHannah Szu-Han Wang, Feng-Cheng Chang\n\n\nLignin-based activated carbon has received wide attention recently. This work focuses on activated carbon produced by electrospinning to study metal ion adsorption performance.\n\nPoster\n\n\nWhat stress college students out? A comparison between Easterners and Westerners\n\nLing Chen, Hannah Szu-Han Wang\n\n\nExamined whether American and Taiwanese college students are stressed by different stressors, comparing cross-cultural differences in student well-being.\n\nPoster"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Hannah Szu-Han Wang",
+    "section": "",
+    "text": "I am an industrial ecologist with more than 5 years of experience in sustainable material design. My current research develops machine-learning-assisted sustainability assessment frameworks and indices that integrate economic and environmental impacts to guide sustainable biomaterial design, including biochar, biographite, and cross-laminated timber. At Yale, I work with Dr. Yuan Yao and Dr. Robert Mendelsohn.\nI was fortunate to work with amazing mentors that inspired me to work at the intersection of ecosystem, engineering, decision-making, and computation. Before PhD, I was a data analyst in Dr. Karl Rohe’s lab. During then, I applied network analysis to Bitcoin transactions and microbial communities. In my undergrad and master, I studied how environments and human behaviors interact. This includes biomaterial development with Dr. Feng-cheng Chang, and social psychology research with Dr. Ling Chen.\n\n\n\n\n\nSystem engineering\n\nMachine learning\n\nSustainable biomaterial design\n\nGeospatial analysis\n\nUncertainty quantification\n\n\n\n\n\nPhD in Environment, exp.2026\nYale University\nMA in Statistics, 2024\nYale University\nMSc in Forestry-Biomaterial, 2020\nNational Taiwan University\nBSc in Forestry / Psychology, 2017\nNational Taiwan University"
+  },
+  {
+    "objectID": "index.html#biography",
+    "href": "index.html#biography",
+    "title": "Hannah Szu-Han Wang",
+    "section": "",
+    "text": "I am an industrial ecologist with more than 5 years of experience in sustainable material design. My current research develops machine-learning-assisted sustainability assessment frameworks and indices that integrate economic and environmental impacts to guide sustainable biomaterial design, including biochar, biographite, and cross-laminated timber. At Yale, I work with Dr. Yuan Yao and Dr. Robert Mendelsohn.\nI was fortunate to work with amazing mentors that inspired me to work at the intersection of ecosystem, engineering, decision-making, and computation. Before PhD, I was a data analyst in Dr. Karl Rohe’s lab. During then, I applied network analysis to Bitcoin transactions and microbial communities. In my undergrad and master, I studied how environments and human behaviors interact. This includes biomaterial development with Dr. Feng-cheng Chang, and social psychology research with Dr. Ling Chen.\n\n\n\n\n\nSystem engineering\n\nMachine learning\n\nSustainable biomaterial design\n\nGeospatial analysis\n\nUncertainty quantification\n\n\n\n\n\nPhD in Environment, exp.2026\nYale University\nMA in Statistics, 2024\nYale University\nMSc in Forestry-Biomaterial, 2020\nNational Taiwan University\nBSc in Forestry / Psychology, 2017\nNational Taiwan University"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "VSP on Tweet\n\n\n\nR\n\n\n\nA hands-on example of the vsp library using a sampled Twitter data-set of tweets under #coronavirus.\n\n\n\n\n\nJun 16, 2020\n\n4 min\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "Talks",
+    "section": "",
+    "text": "Machine learning-assisted global life cycle assessment reveals long-term biochar-crop design strategies for climate-smart agriculture\n\nJuly 2025 · International Conference on Industrial Ecology (ISIE), Singapore\n\n\n\nUnderstanding crop dynamics in Kenya with Machine Learning\n\nAug 2024 · Climate Change AI (CCAI) Summer School, Montreal, Canada\n\nPDF Slides\n\n\nSustainable Circular Bioeconomy as Climate Change Mitigation - U.S. Biochar System Study\n\nOct 2023 · INFORMS Annual Meetings, Arizona, U.S.A.\n\n\n\nGenerating Life Cycle Inventory for Industrial Systems in (Developing) Countries with Graph Neural Network: A Case Study on Electricity Production\n\nJune 2023 · International Conference on Industrial Ecology (ISIE), Leiden, Netherlands\n\n\n\nIntroduction to Machine Learning (1 hour)\n\nNov 11, 2022 · Yale University\n\nPDF Slides\n\n\nCharacterization and adsorption potential of Lignosulfonate-based activated carbon fibers\n\nOct 18–19, 2018 · National Taiwan University\n\nSlides"
+  }
+]

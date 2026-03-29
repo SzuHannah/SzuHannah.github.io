@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git ls-tree:*)",
+      "Bash(quarto render:*)",
+      "Read(//mnt/g/My Drive/resume/**)",
+      "WebSearch",
+      "WebFetch(domain:szuhannah.github.io)",
+      "WebFetch(domain:www.sciencedirect.com)"
+    ]
+  }
+}

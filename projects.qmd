@@ -1,0 +1,58 @@
+---
+title: "Projects"
+toc: false
+---
+
+<div class="project-grid">
+
+<div class="card-item">
+<span class="tag-badge">Bitcoin</span>
+
+### Bitcoin Transaction
+
+Bitcoin transactions can reveal behaviors relative to black market activities, currency crisis in certain countries, and more. We aim to detect patterns in the transaction graph and understand user behaviors.
+
+<div class="meta">Python, R, SQLite, Neo4j · Dec 2020</div>
+
+[Slides](files/slides/bitcoinslide/index.html){.link-btn target="_blank"}
+[Draft Report](files/papers/bitcoin-paper.pdf){.link-btn target="_blank"}
+[Gitbook](https://szuhannah.gitbook.io/bitcoin-address-clustering-with-the-famous){.link-btn target="_blank"}
+[Code](https://github.com/SzuHannah/bitcoin-data-process){.link-btn target="_blank"}
+</div>
+
+<div class="card-item">
+<span class="tag-badge">Microbiome</span>
+
+### Environment, Soil pH, and Microbiome
+
+Analyzed data from the Earth Microbiome Project, observing that soil bacteria diversity and function are influenced by different environments and soil pH. Used Vintage Sparse PCA (VSP).
+
+<div class="meta">Authors: Emily Diaz Vallejo & Hannah Wang</div>
+
+[Report](files/papers/Microbial_Report.pdf){.link-btn target="_blank"}
+[Code](https://github.com/SzuHannah/Microbial-graph){.link-btn target="_blank"}
+</div>
+
+<div class="card-item">
+<span class="tag-badge">Twitter</span>
+
+### Murmuration
+
+This project was condusted when I was a data analyst at Dr. Karl Rohe's Lab. The web application aims to visualize public attention across political and cultural flocks on Twitter.
+
+[Website](https://murmuration.wisc.edu/){.link-btn target="_blank"}
+</div>
+
+<div class="card-item">
+<span class="tag-badge">Twitter</span>
+
+### Coronavirus Tweet
+
+An R Shiny app that allows users to explore tweets under #coronavirus, leveraging VSP to cluster tweets by topic and flock.
+
+<!-- <div class="meta">R Shiny</div> -->
+[R shiny app](https://hannahwang.shinyapps.io/CoronavirusTweet/){.link-btn target="_blank"}
+[Code](https://github.com/SzuHannah/CoronavirusTweet){.link-btn target="_blank"}
+</div>
+
+</div>

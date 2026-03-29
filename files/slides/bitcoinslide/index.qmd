@@ -1,0 +1,62 @@
+---
+title: "Bitcoin & Neo4j"
+format:
+  revealjs:
+    theme: white
+    center: true
+    controls: true
+    progress: true
+    history: true
+    transition: slide
+    mouse-wheel: true
+---
+
+## Bitcoin introduction
+
+![Bitcoin distributed network](img/bitcoin1.jpg){width="90%"}
+
+## Bitcoin introduction
+
+![Bitcoin distributed network](img/bitcoin2.jpg){width="70%"}
+
+## Bitcoin introduction
+
+- Files: blkxxx.dat
+- Serialized data of blocks and transactions
+- Block: version, previous block, time...
+- Transaction: input/output addrs, value...
+
+![Blockchain](img/blockchain.jpeg){width="35%"}
+
+## Blockchain graph
+
+![](img/blockchaingraph.png){width="65%"}
+
+## Blockchain graph (Nodes)
+
+- Block: BlockID (height), timeStamp
+- Transaction: TxID (height-txPosition, e.g. 10001-1), timeStamp, inputTotal, outputTotal
+- Wallet (addrs aggregation): WalletID
+
+![](img/unionFind.jpeg){width="75%"}
+
+## Blockchain graph (Relationships)
+
+- Contains (Block-Transaction)
+- Input/Output (Wallet-Transaction): value
+
+![Contains](img/contains_rel.png){width="300"}
+![InOut](img/input_output_rel.png)
+
+## Induced Transaction graph
+
+- Node: Wallet
+- Relationship: Sent_to {timeStamp, value}
+
+![](img/inoutSent.jpeg)
+
+## Induced Transaction graph
+
+![](img/txgraph.png){width="55%"}
+
+# Thank you

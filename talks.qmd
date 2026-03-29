@@ -1,0 +1,54 @@
+---
+title: "Talks"
+toc: false
+---
+
+<div class="card-item">
+
+### Machine learning-assisted global life cycle assessment reveals long-term biochar-crop design strategies for climate-smart agriculture
+
+<div class="meta">July 2025 · International Conference on Industrial Ecology (ISIE), Singapore</div>
+
+</div>
+
+<div class="card-item">
+
+### Understanding crop dynamics in Kenya with Machine Learning
+
+<div class="meta">Aug 2024 · Climate Change AI (CCAI) Summer School, Montreal, Canada</div>
+[PDF Slides](files/slides/crop_kenya.pdf){.link-btn target="_blank"}
+</div>
+
+<div class="card-item">
+
+### Sustainable Circular Bioeconomy as Climate Change Mitigation - U.S. Biochar System Study
+
+<div class="meta">Oct 2023 · INFORMS Annual Meetings, Arizona, U.S.A.</div>
+
+</div>
+
+<div class="card-item">
+
+### Generating Life Cycle Inventory for Industrial Systems in (Developing) Countries with Graph Neural Network: A Case Study on Electricity Production
+
+<div class="meta">June 2023 · International Conference on Industrial Ecology (ISIE), Leiden, Netherlands</div>
+
+</div>
+
+<div class="card-item">
+
+### Introduction to Machine Learning (1 hour)
+
+<div class="meta">Nov 11, 2022 · Yale University</div>
+
+[PDF Slides](files/slides/intro-to-ml.pdf){.link-btn target="_blank"}
+</div>
+
+<div class="card-item">
+
+### Characterization and adsorption potential of Lignosulfonate-based activated carbon fibers
+
+<div class="meta">Oct 18–19, 2018 · National Taiwan University</div>
+
+[Slides](files/slides/2018ForestryMeeting.pdf){.link-btn target="_blank"}
+</div>

@@ -1,0 +1,9 @@
+---
+title: "Blog"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  fields: [date, title, categories, description, reading-time]
+---

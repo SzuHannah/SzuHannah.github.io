@@ -1,0 +1,152 @@
+---
+title: "Publications"
+toc: false
+---
+
+<div class="card-item">
+
+### A Spatially Explicit Societal Life Cycle Cost Framework for Sustainable Biographite Production in the United States
+
+<div class="meta">**Hannah Szu-Han Wang**, Jose A. Gonzalez-Aguirre, Sunkyu Park, Yuan Yao</div>
+
+<div class="description">
+*Joule* (under review)
+</div>
+
+</div>
+
+<div class="card-item">
+
+### Machine learning-assisted global life cycle assessment for sustainable biochar design
+
+<div class="meta">**Hannah Szu-Han Wang**, Wei Ren, Yuan Yao</div>
+
+<div class="description">
+*Nature Chemical Engineering* (under revision)
+</div>
+
+[Preprint](https://chemrxiv.org/doi/full/10.26434/chemrxiv-2025-drdqn){.link-btn target="_blank"}
+</div>
+
+<div class="card-item">
+
+### Global Land and Carbon Consequences of Mass Timber Products
+
+<div class="meta">Kai Lan, Alice Favero, Yuan Yao, Robert O. Mendelsohn, **Hannah Szu-Han Wang**</div>
+
+<div class="description">
+*Nature Communications*, 16, pp. 4864, May 2025
+</div>
+
+[PDF](https://www.nature.com/articles/s41467-025-60245-y){.link-btn target="_blank"}
+[DOI](https://doi.org/10.1038/s41467-025-60245-y){.link-btn target="_blank"}
+</div>
+
+<div class="card-item">
+
+### A modeling framework to identify environmentally greener and lower-cost pathways of nanomaterials
+
+<div class="meta">Kai Lan, **Hannah Szu-Han Wang**, Tessa Lee, Camilla Abbati de Assis, Richard Venditti, Yuan Yao</div>
+
+<div class="description">
+*Green Chemistry*, 26, pp. 3466-3478, Feb 2024
+</div>
+
+[PDF](https://pubs.rsc.org/en/content/articlehtml/2024/gc/d3gc04036d){.link-btn target="_blank"}
+[DOI](https://doi.org/10.1039/D3GC04036D){.link-btn target="_blank"}
+</div>
+
+<div class="card-item">
+
+### Machine learning for sustainable development and applications of biomass and biomass-derived carbonaceous materials in water and agricultural systems: A review
+
+<div class="meta">**Hannah Szu-Han Wang**, Yuan Yao</div>
+
+<div class="description">
+*Resources, Conservation & Recycling*, 290, pp. 106847, March 2023
+</div>
+
+[PDF](https://www.sciencedirect.com/science/article/abs/pii/S0921344922006796){.link-btn target="_blank"}
+[DOI](https://doi.org/10.1016/j.resconrec.2022.106847){.link-btn target="_blank"}
+</div>
+
+<div class="card-item">
+
+### Cu(II) and Au(III) recovery with Electrospun Lignosulfonate CO<sub>2</sub>-Activated Carbon Fiber
+
+<div class="meta">**Szu-Han Wang**, Feng-Cheng Chang</div>
+
+<div class="description">
+*International Journal of Biological Macromolecules*, 203, pp. 505-514, April 2022
+</div>
+
+[PDF](https://www.sciencedirect.com/science/article/abs/pii/S0141813022001386){.link-btn target="_blank"}
+[DOI](https://doi.org/10.1016/j.ijbiomac.2022.01.124){.link-btn target="_blank"}
+</div>
+
+<div class="card-item">
+
+### Developing self-activated lignosulfonate-based porous carbon material for ethylene adsorption
+
+<div class="meta">**Hannah Szu-Han Wang**, Yuh-Kai Hwang, Seung Wan Choi, Xiangzhou Yuan, Ki Bong Lee, Feng-Cheng Chang</div>
+
+<div class="description">
+*Journal of the Taiwan Institute of Chemical Engineers*, 2020
+</div>
+
+[PDF](https://www.sciencedirect.com/science/article/pii/S187610702030314X?via%3Dihub){.link-btn target="_blank"}
+[DOI](https://doi.org/10.1016/j.jtice.2020.10.017){.link-btn target="_blank"}
+</div>
+
+<div class="card-item">
+
+### Developing Lignosulfonate-Based Activated Carbon Fibers
+
+<div class="meta">Feng-Cheng Chang, Shih-Hsuan Yen, **Hannah Szu-Han Wang**</div>
+
+<div class="description">
+*Materials*, 11(10), 1877, 2018
+</div>
+
+[PDF](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6213230/pdf/materials-11-01877.pdf){.link-btn target="_blank"}
+[DOI](https://doi.org/10.3390/ma11101877){.link-btn target="_blank"}
+</div>
+
+<div class="card-item">
+
+### Crosslinking and carbonization of electrospun lignosulfonate fiber
+
+<div class="meta">William Tai Yin Tze, **Hannah Szu-Han Wang**, Hsin-Chen Chen, Feng-Cheng Chang</div>
+
+<div class="description">
+Submicron-sized fiber of lignosulfonate can be electrospun from aqueous solution, signifying the possibility of green processing for carbon-based materials.
+</div>
+
+[Poster](files/posters/TAPPInanotech2019_posterTzeHan.pdf){.link-btn target="_blank"}
+</div>
+
+<div class="card-item">
+
+### Study on Cu(II) and Au(III) metal ion adsorption performance of the lignosulfonate activated carbon fiber
+
+<div class="meta">**Hannah Szu-Han Wang**, Feng-Cheng Chang</div>
+
+<div class="description">
+Lignin-based activated carbon has received wide attention recently. This work focuses on activated carbon produced by electrospinning to study metal ion adsorption performance.
+</div>
+
+[Poster](files/posters/TAPPInanotech2019_posterHan.pdf){.link-btn target="_blank"}
+</div>
+
+<div class="card-item">
+
+### What stress college students out? A comparison between Easterners and Westerners
+
+<div class="meta">Ling Chen, **Hannah Szu-Han Wang**</div>
+
+<div class="description">
+Examined whether American and Taiwanese college students are stressed by different stressors, comparing cross-cultural differences in student well-being.
+</div>
+
+[Poster](files/posters/TACP2016_poster_ChenWang.pdf){.link-btn target="_blank"}
+</div>
