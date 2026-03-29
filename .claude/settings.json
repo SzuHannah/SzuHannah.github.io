@@ -6,7 +6,8 @@
       "Read(//mnt/g/My Drive/resume/**)",
       "WebSearch",
       "WebFetch(domain:szuhannah.github.io)",
-      "WebFetch(domain:www.sciencedirect.com)"
+      "WebFetch(domain:www.sciencedirect.com)",
+      "Bash(gh api:*)"
     ]
   }
 }
