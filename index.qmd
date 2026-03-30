@@ -13,7 +13,7 @@ about:
 
 ## Biography
 
-I am an industrial ecologist with more than 5 years of experience in sustainable material design. My current research develops machine-learning-assisted sustainability assessment frameworks and indices that integrate economic and environmental impacts to guide sustainable biomaterial design, including biochar, biographite, and cross-laminated timber. At Yale, I work with [Dr. Yuan Yao](https://environment.yale.edu/directory/faculty/yuan-yao) and [Dr. Robert Mendelsohn](https://environment.yale.edu/directory/faculty/robert-mendelsohn).
+I am an industrial ecologist with more than 5 years of experience in bioeconomy. My current research develops machine-learning-assisted sustainability assessment frameworks and indices that integrate economic and environmental impacts to guide sustainable biomaterial design, including biochar, biographite, and cross-laminated timber. At Yale, I work with [Dr. Yuan Yao](https://environment.yale.edu/directory/faculty/yuan-yao) and [Dr. Robert Mendelsohn](https://environment.yale.edu/directory/faculty/robert-mendelsohn).
 
 I was fortunate to work with amazing mentors that inspired me to work at the intersection of ecosystem, engineering, decision-making, and computation. Before PhD, I was a data analyst in [Dr. Karl Rohe](https://pages.stat.wisc.edu/~karlrohe/)'s lab. During then, I applied network analysis to Bitcoin transactions and microbial communities. In my undergrad and master, I studied how environments and human behaviors interact. This includes biomaterial development with [Dr. Feng-cheng Chang](https://scholar.google.com/citations?user=6YSzB_YAAAAJ&hl=en), and social psychology research with [Dr. Ling Chen](https://scholar.google.com/citations?user=_o5Uv5wAAAAJ&hl=en).  
 
