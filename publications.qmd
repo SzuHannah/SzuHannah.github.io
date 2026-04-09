@@ -10,7 +10,7 @@ toc: false
 <div class="meta">**Hannah Szu-Han Wang**, Jose A. Gonzalez-Aguirre, Sunkyu Park, Yuan Yao</div>
 
 <div class="description">
-*Joule* (under review)
+*Environmental Science & Technology* (under review)
 </div>
 
 </div>
